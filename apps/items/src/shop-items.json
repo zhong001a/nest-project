@@ -1,0 +1,91 @@
+[
+  {
+    "id":"p1",
+    "name": "Chanel 19 Flap Bag Tweed in Multicolour Holo 30",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20220912112207f2jnh.jpg",
+    "price": 180000,
+    "color": "Multicolor",
+    "description":"กระเป๋า Louis Vuitton Trouville White Multicolor Monogram เป็นกระเป๋าถือขนาดกะทัดรัด ที่มีดีไซน์งดงามสมบูรณ์แบบ ทำขึ้นจากผ้าแคนวาสสีขาวลายมัลติคัลเลอร์โมโนแกรม ตัดแต่งด้วยหนัง Vachetta Cowhide "
+  },
+  {
+
+    "id":"p2",
+    "name": "Louis Vuitton Beggy PM Denim Handbag",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230221104849vzd7u.jpg",
+    "price": 19900,
+    "color": "Blue",
+    "description":"Blue Louis Vuitton Beggy PM Denim Handbag"
+  },
+  {
+    "id":"p3",
+    "name": "Chanel 19 Maxi Black Lambskin Bag in Black Holo 30",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20220912152634b76pl.jpg",
+    "price": 200000,
+    "color": "Black",
+    "description":"Black Chanel 19 Maxi Black Lambskin Bag in Black Holo 30"
+  },
+  {
+
+    "id":"p4",
+    "name": "Chanel Quilted Lambskin Airpods Pro Case In Light Blue",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230317105536ot7l3.jpg",
+    "price": 20000,
+    "color": "Blue",
+    "description":"Blue Chanel Quilted Lambskin Airpods Pro Case In Light Blue"
+  },
+  {
+
+    "id":"p5",
+    "name": "Hermes Birkin 30 Malachite Green Togo Leather PHW Bag",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230317105536ot7l3.jpg",
+    "price": 500000,
+    "color": "Green",
+    "description":"Green Hermes Birkin 30 Malachite Green Togo Leather PHW Bag"
+  },
+  {
+
+    "id":"p6",
+    "name": "Louis Vuitton Trouville White Multicolor Monogram Handbag",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230116154144qdxzy.jpg",
+    "price": 45000,
+    "color": "Multicolor",
+    "description":"Multicolor Louis Vuitton Trouville White Multicolor Monogram Handbag"
+  },
+  {
+
+    "id":"p7",
+    "name": "Christian Dior Medium Book Tote In Blue Mesh Embroidery",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230208165006hnck8.jpg",
+    "price": 75000,
+    "color": "Blue",
+    "description":"Blue Christian Dior Medium Book Tote In Blue Mesh Embroidery"
+  },
+  {
+
+    "id":"p8",
+     "name": "Louis Vuitton Handbag Alma BB in Damier Ebene",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230228154928dhrqf.jpg",
+    "price": 53000,
+    "color": "Multicolor",
+    "description":"Multicolor Louis Vuitton Handbag Alma BB in Damier Ebene"
+  },
+  {
+
+
+    "id":"p9",
+    "name": "Celine Luggage Micro in Souris",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20221103110554i4hly.jpg",
+    "price": 76990,
+    "color": "Grey",
+    "description":"Grey Celine Luggage Micro in Souris"
+  },
+  {
+
+    "id":"p10",
+    "name": "COS Handbag Quilted Mini Bag in Black",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230220134923ztj1y.jpg",
+    "price": 4190,
+    "color": "Black",
+    "description":"Black COS Handbag Quilted Mini Bag in Black"
+  }
+]
