@@ -9,6 +9,13 @@ import { JwtAuthGuard } from '@app/common';
 export class ItemsController {
   constructor(private readonly itemsService: ItemsService) {}
 
+  @Post('/create')
+  @UseGuards(JwtAuthGuard)
+  createOneItem (@Body() createItemDto:CreateItemDto){
+
+    return this.itemsService.create(createItemDto)
+  }
+
   @Post()
   @UseGuards(JwtAuthGuard)
   createItem (){
@@ -29,6 +36,8 @@ export class ItemsController {
     return this.itemsService.findOneItem( id )
   }
 
+
+
   @Patch(':id')
   @UseGuards(JwtAuthGuard)
   updateItem(@Param('id') id: string, @Body() updateItem: UPdateItemDto ){
@@ -46,6 +55,5 @@ export class ItemsController {
   deleteAll(){
     return this.itemsService.deleteAll()
   }
-
-  
+ 
 }

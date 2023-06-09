@@ -77,13 +77,25 @@ export class OrdersController {
     return await this.ordersService.PayOrder(id,updateOrderDto)
   }
 
-  @Patch('order/:id')
+  @Patch('cancel/:id')
   @UseGuards(JwtAuthGuard)
-  async updateOrder(@Param('id') id: string, @Body() createOrderDto:CreateOrderDto, @Products() products: any)
+  async cancelOrder(@Param('id') id: string)
   {
     const order = await this.ordersService.findOne(id);
     if(order.status === "paid"){
       throw new BadRequestException("This order already paid.")
+    }
+
+    return await this.ordersService.cancelOrder( id, "calcel" )
+  }
+
+  @Patch('pay/:id')
+  @UseGuards(JwtAuthGuard)
+  async payOrder(@Param('id') id: string, @Body() createOrderDto:CreateOrderDto, @Products() products: any)
+  {
+    const order = await this.ordersService.findOne(id);
+    if(order.status === "paid" || order.status === "cancel"){
+      throw new BadRequestException("This order already paid or canceled.")
     }
 
     let orderPrice: number = 0;
@@ -101,6 +113,12 @@ export class OrdersController {
     })
 
     return await this.ordersService.updateOrder( id, createOrderDto, orderPrice)
+  }
+
+  @Delete('id')
+  @UseGuards(JwtAuthGuard)
+  async deleteOne(@Param('id') id: string) {
+    return await this.ordersService.deleteOne(id)
   }
 
 

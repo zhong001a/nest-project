@@ -61,6 +61,16 @@ export class OrdersService {
       );
   }
 
+  async cancelOrder( _id: string, status: string, ){
+    return this.orderRepository.findOneAndUpdate(
+      { _id },
+      {
+        status: status
+      }
+    );
+  }
+
+
   async updateOrder( _id: string, createOrderDto: CreateOrderDto, orderPrice: number){
     return this.orderRepository.findOneAndUpdate(
       { _id },
@@ -69,6 +79,11 @@ export class OrdersService {
         total: orderPrice
       }
     );
+  }
+
+  async deleteOne( _id:string ) {
+    return this.orderRepository.findOneAndDelete({ _id })
+
   }
 
 
