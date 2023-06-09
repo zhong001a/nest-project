@@ -10,7 +10,7 @@ export class ItemsController {
   constructor(private readonly itemsService: ItemsService) {}
 
   @Post()
-  // @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard)
   createItem (){
     Items.map((item:CreateItemDto)=>{
       return this.itemsService.create(item)
@@ -19,14 +19,14 @@ export class ItemsController {
     return "Created."
   }
 
-  @Get(':id')
-  findOneItem(@Param('id') id: string){
-    return this.itemsService.findOneItem( id )
-  }
-
   @Get()
   findItem (){
     return this.itemsService.findAll()
+  }
+
+  @Get(':id')
+  findOneItem(@Param('id') id: string){
+    return this.itemsService.findOneItem( id )
   }
 
   @Patch(':id')
