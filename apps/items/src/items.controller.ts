@@ -10,7 +10,7 @@ export class ItemsController {
   constructor(private readonly itemsService: ItemsService) {}
 
   @Post()
-  @UseGuards(JwtAuthGuard)
+  // @UseGuards(JwtAuthGuard)
   createItem (){
     Items.map((item:CreateItemDto)=>{
       return this.itemsService.create(item)
