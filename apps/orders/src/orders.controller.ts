@@ -112,8 +112,8 @@ export class OrdersController {
       }
     })
 
-    return await this.ordersService.PayOrder( id, createOrderDto)
-    return payOrder
+    return await this.ordersService.PayOrder( id, payOrder)
+    // return payOrder
   }
 
   @Delete('id')

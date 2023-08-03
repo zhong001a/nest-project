@@ -25,44 +25,44 @@ services:
     volumes:
       - .:/usr/src/app
 
-  payment:
-    build:
-      context: .
-      dockerfile: ./apps/payment/Dockerfile
-      target: development
-    command: npm run start:dev payment
-    env_file:
-      - ./apps/payment/.env
-    ports:
-      - '3003:3003'
-    volumes:
-      - .:/usr/src/app
+  # payment:
+  #   build:
+  #     context: .
+  #     dockerfile: ./apps/payment/Dockerfile
+  #     target: development
+  #   command: npm run start:dev payment
+  #   env_file:
+  #     - ./apps/payment/.env
+  #   ports:
+  #     - '3003:3003'
+  #   volumes:
+  #     - .:/usr/src/app
 
-  orders:
-    build:
-      context: .
-      dockerfile: ./apps/orders/Dockerfile
-      target: development
-    command: npm run start:dev orders
-    env_file:
-      - ./apps/orders/.env
-    ports:
-      - '3030:3030'
-    volumes:
-      - .:/usr/src/app
+  # orders:
+  #   build:
+  #     context: .
+  #     dockerfile: ./apps/orders/Dockerfile
+  #     target: development
+  #   command: npm run start:dev orders
+  #   env_file:
+  #     - ./apps/orders/.env
+  #   ports:
+  #     - '3030:3030'
+  #   volumes:
+  #     - .:/usr/src/app
 
-  items:
-    build:
-      context: .
-      dockerfile: ./apps/items/Dockerfile
-      target: development
-    command: npm run start:dev items
-    env_file:
-      - ./apps/items/.env
-    ports:
-      - '3010:3010'
-    volumes:
-      - .:/usr/src/app
+  # items:
+  #   build:
+  #     context: .
+  #     dockerfile: ./apps/items/Dockerfile
+  #     target: development
+  #   command: npm run start:dev items
+  #   env_file:
+  #     - ./apps/items/.env
+  #   ports:
+  #     - '3010:3010'
+  #   volumes:
+  #     - .:/usr/src/app
 
   profile:
     build:
@@ -76,6 +76,17 @@ services:
       - '3020:3020'
     volumes:
       - .:/usr/src/app
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    ports:
+      - "8080:8080"
+    volumes:
+      - "jenkins_home:/var/jenkins_home"
+    restart: always
+    environment:
+      - JAVA_OPTS=-Djenkins.install.runSetupWizard=false
 
   mongo:
     image: mongo
