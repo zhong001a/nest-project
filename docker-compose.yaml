@@ -77,7 +77,6 @@ services:
     volumes:
       - .:/usr/src/app
 
-
   mongo:
     image: mongo
 
