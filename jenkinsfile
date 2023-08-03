@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        docker { image 'nest-project-items'}
+    }
 
     stages {
         stage('Build') {
@@ -9,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'docker-compose upS'
+                sh 'docker-compose up'
             }
         }
 
