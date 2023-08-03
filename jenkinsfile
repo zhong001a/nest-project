@@ -18,15 +18,18 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             script {
-                echo "Start Building Images"
-                docker.build('mongo:latest','.')
-                // docker.build('nest-project-profile:latest','.')
-                // docker.build('nest-project-reservations:latest','.')
-                // docker.build('nest-project-auth:latest','.')
-                // docker.build('nest-project-payment:latest','.')
-                // docker.build('nest-project-orders:latest','.')
-                // docker.build('nest-project-itmes:latest','.')
+                steps{
+                    echo "Start Building Images"
+                    docker.build('mongo:latest','.')
+                    // docker.build('nest-project-profile:latest','.')
+                    // docker.build('nest-project-reservations:latest','.')
+                    // docker.build('nest-project-auth:latest','.')
+                    // docker.build('nest-project-payment:latest','.')
+                    // docker.build('nest-project-orders:latest','.')
+                    // docker.build('nest-project-itmes:latest','.')
 
+                }
+               
             }
         }
         stage('Prepare image') {
