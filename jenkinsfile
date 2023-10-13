@@ -1,0 +1,58 @@
+def notifyLINE(status) {
+    def token = "byjkztUBNWRDitC8ePX1cUn7kxbwj58VBfwFxVYsg5T"
+    def jobName = env.JOB_NAME +' '+env.BRANCH_NAME
+    def buildNo = env.BUILD_NUMBER
+      
+    def url = 'https://notify-api.line.me/api/notify'
+    def message = "Test build from github repository : #${buildNo}\nStatus : ${status} \r\n"
+    sh "curl ${url} -H 'Authorization: Bearer ${token}' -F 'message=${message}'"
+}
+
+pipeline {
+    agent any
+
+    environment{
+        COMPOSE_FILE = "docker-compose.yml"
+        REGISTY_AUTH = credentials("docker-usr-psw")
+    }
+    stages {
+        stage('Build Docker Image') {
+            script {
+                steps{
+                    echo "Start Building Images"
+                    docker.build('mongo:latest','.')
+                    // docker.build('nest-project-profile:latest','.')
+                    // docker.build('nest-project-reservations:latest','.')
+                    // docker.build('nest-project-auth:latest','.')
+                    // docker.build('nest-project-payment:latest','.')
+                    // docker.build('nest-project-orders:latest','.')
+                    // docker.build('nest-project-itmes:latest','.')
+
+                }
+               
+            }
+        }
+        stage('Prepare image') {
+            steps {
+                sh 'docker-compose build'
+                sh 'docker-compose up'
+            }
+
+        }
+        stage("Run Test API") {
+            sh './api'
+        }
+
+    }
+    post{
+        success{
+            echo "Build Success"
+            notify("Build Success")
+        }
+        failure{
+            notify("Build Failure")
+        }
+    }
+
+
+}
