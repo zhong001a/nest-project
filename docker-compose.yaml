@@ -25,57 +25,57 @@ services:
     volumes:
       - .:/usr/src/app
 
-  # payment:
-  #   build:
-  #     context: .
-  #     dockerfile: ./apps/payment/Dockerfile
-  #     target: development
-  #   command: npm run start:dev payment
-  #   env_file:
-  #     - ./apps/payment/.env
-  #   ports:
-  #     - '3003:3003'
-  #   volumes:
-  #     - .:/usr/src/app
-
-  # orders:
-  #   build:
-  #     context: .
-  #     dockerfile: ./apps/orders/Dockerfile
-  #     target: development
-  #   command: npm run start:dev orders
-  #   env_file:
-  #     - ./apps/orders/.env
-  #   ports:
-  #     - '3030:3030'
-  #   volumes:
-  #     - .:/usr/src/app
-
-  # items:
-  #   build:
-  #     context: .
-  #     dockerfile: ./apps/items/Dockerfile
-  #     target: development
-  #   command: npm run start:dev items
-  #   env_file:
-  #     - ./apps/items/.env
-  #   ports:
-  #     - '3010:3010'
-  #   volumes:
-  #     - .:/usr/src/app
-
-  profile:
+  payment:
     build:
       context: .
-      dockerfile: ./apps/profile/Dockerfile
+      dockerfile: ./apps/payment/Dockerfile
       target: development
-    command: npm run start:dev profile
+    command: npm run start:dev payment
     env_file:
-      - ./apps/profile/.env
+      - ./apps/payment/.env
     ports:
-      - '3020:3020'
+      - '3003:3003'
     volumes:
       - .:/usr/src/app
+
+  orders:
+    build:
+      context: .
+      dockerfile: ./apps/orders/Dockerfile
+      target: development
+    command: npm run start:dev orders
+    env_file:
+      - ./apps/orders/.env
+    ports:
+      - '3030:3030'
+    volumes:
+      - .:/usr/src/app
+
+  items:
+    build:
+      context: .
+      dockerfile: ./apps/items/Dockerfile
+      target: development
+    command: npm run start:dev items
+    env_file:
+      - ./apps/items/.env
+    ports:
+      - '3010:3010'
+    volumes:
+      - .:/usr/src/app
+
+  # profile:
+  #   build:
+  #     context: .
+  #     dockerfile: ./apps/profile/Dockerfile
+  #     target: development
+  #   command: npm run start:dev profile
+  #   env_file:
+  #     - ./apps/profile/.env
+  #   ports:
+  #     - '3020:3020'
+  #   volumes:
+  #     - .:/usr/src/app
 
 
   mongo:

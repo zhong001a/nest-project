@@ -91,26 +91,12 @@ export class OrdersController {
 
   @Patch('pay/:id')
   @UseGuards(JwtAuthGuard)
-  async payOrder(@Param('id') id: string, @Body() payOrder:PayOrderDto, @Products() products: any, createOrderDto: CreateOrderDto)
+  async payOrder(@Param('id') id: string, @Body() payOrder:PayOrderDto )
   {
     const order = await this.ordersService.findOne(id);
     if(order.status === "paid" || order.status === "cancel"){
       throw new BadRequestException("This order already paid or canceled.")
     }
-
-    let orderPrice: number = 0;
-    const productsOrder = createOrderDto.products.map((product: any) => ({
-      id: product.id,
-      quantity: product.quantity,
-    }));
-
-    productsOrder.map(({ id, quantity }) => {
-      for (const product of products) {
-        if (product.id === id) {
-          orderPrice = orderPrice + (product.price * quantity)
-        }
-      }
-    })
 
     return await this.ordersService.PayOrder( id, payOrder)
     // return payOrder
