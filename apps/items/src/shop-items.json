@@ -8,7 +8,6 @@
     "description":"กระเป๋า Louis Vuitton Trouville White Multicolor Monogram เป็นกระเป๋าถือขนาดกะทัดรัด ที่มีดีไซน์งดงามสมบูรณ์แบบ ทำขึ้นจากผ้าแคนวาสสีขาวลายมัลติคัลเลอร์โมโนแกรม ตัดแต่งด้วยหนัง Vachetta Cowhide "
   },
   {
-
     "id":"p2",
     "name": "Louis Vuitton Beggy PM Denim Handbag",
     "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230221104849vzd7u.jpg",
@@ -25,7 +24,6 @@
     "description":"Black Chanel 19 Maxi Black Lambskin Bag in Black Holo 30"
   },
   {
-
     "id":"p4",
     "name": "Chanel Quilted Lambskin Airpods Pro Case In Light Blue",
     "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230317105536ot7l3.jpg",
@@ -34,7 +32,6 @@
     "description":"Blue Chanel Quilted Lambskin Airpods Pro Case In Light Blue"
   },
   {
-
     "id":"p5",
     "name": "Hermes Birkin 30 Malachite Green Togo Leather PHW Bag",
     "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230317105536ot7l3.jpg",
@@ -43,7 +40,6 @@
     "description":"Green Hermes Birkin 30 Malachite Green Togo Leather PHW Bag"
   },
   {
-
     "id":"p6",
     "name": "Louis Vuitton Trouville White Multicolor Monogram Handbag",
     "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230116154144qdxzy.jpg",
@@ -52,7 +48,6 @@
     "description":"Multicolor Louis Vuitton Trouville White Multicolor Monogram Handbag"
   },
   {
-
     "id":"p7",
     "name": "Christian Dior Medium Book Tote In Blue Mesh Embroidery",
     "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230208165006hnck8.jpg",
@@ -61,7 +56,6 @@
     "description":"Blue Christian Dior Medium Book Tote In Blue Mesh Embroidery"
   },
   {
-
     "id":"p8",
      "name": "Louis Vuitton Handbag Alma BB in Damier Ebene",
     "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230228154928dhrqf.jpg",
@@ -70,8 +64,6 @@
     "description":"Multicolor Louis Vuitton Handbag Alma BB in Damier Ebene"
   },
   {
-
-
     "id":"p9",
     "name": "Celine Luggage Micro in Souris",
     "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20221103110554i4hly.jpg",
@@ -80,12 +72,93 @@
     "description":"Grey Celine Luggage Micro in Souris"
   },
   {
-
     "id":"p10",
     "name": "COS Handbag Quilted Mini Bag in Black",
     "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230220134923ztj1y.jpg",
     "price": 4190,
     "color": "Black",
     "description":"Black COS Handbag Quilted Mini Bag in Black"
+  },
+
+  {
+    "id":"p11",
+    "name": "Hermes Clic H Bracelet PM in Bleu Abysse",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230208165503gr6z9.jpg",
+    "price": 18500,
+    "color": "Blue",
+    "description":"Blue Hermes Clic H Bracelet PM in Bleu Abysse"
+  },
+  {
+    "id":"p12",
+    "name": "Hermes Clic H Bracelet PM in Bleu Abysse",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20230118105805wkirg.jpg",
+    "price": 39000,
+    "color": "Red",
+    "description":"Red Hermes Clic H Bracelet PM in Bleu Abysse"
+    
+  },
+  {
+    "id":"p13",
+    "name": "Chanel Vintage Rue Cambon Medallion Choker Necklace",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20221228164045f39aq.jpg",
+    "price": 57000,
+    "color": "Yellow/Gold",
+    "description":"Yellow/Gold Chanel Vintage Rue Cambon Medallion Choker Necklace"
+  },
+  {
+    "id":"p14",
+    "name": "Versace Vintage Palazzo Gold Earrings",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20221102100910q01vq.jpg",
+    "price": 13900,
+    "color": "Gold",
+    "description":"Gold Versace Vintage Palazzo Gold Earrings"
+  },
+  {
+    "id":"p15",
+    "name": "Cartier Maillon Panthère Wedding Band-Diamond Ring",
+    "imageUrl":"https://image.katexoxo.com/uploads/images/kxo_20221027112839ej5nf.jpg",
+    "price": 77290,
+    "color": "Pink",
+    "description":"Pink Cartier Maillon Panthère Wedding Band-Diamond Ring"
+  },
+  {
+    "id":"p16",
+    "name": "Chanel Vintage CC Diamond Shaped Necklace",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20221021143522jx24r.jpg",
+    "price": 180000,
+    "color": "Yellow/Gold",
+    "description":"Yellow/Gold Chanel Vintage CC Diamond Shaped Necklace"
+  },
+  {
+    "id":"p17",
+    "name": "Louis Vuitton White Monogram Multicolore Address Bracelet",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/front_20221011140324hd4z1.png",
+    "price": 8900,
+    "color": "White",
+    "description":"White Louis Vuitton White Monogram Multicolore Address Bracelet"
+  },
+  {
+    "id":"p18",
+     "name": "Chanel Metal Round Coco Mark Gold/Silver Earrings",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20221010100230c3cqo.jpg",
+    "price": 32000,
+    "color": "White",
+    "description":"White Chanel Metal Round Coco Mark Gold/Silver Earrings"
+  },
+  {
+    "id":"p19",
+    "name": "Chanel Vintage CC Logos Peals Bracelet",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20220928095510xkra1.jpg",
+    "price": 52900,
+    "color": "White",
+    "description":"White Chanel Vintage CC Logos Peals Bracelet"
+  },
+  {
+    "id":"p20",
+    "name": "Chanel Necklace From Paris Edinburgh Meters D'Art Collection",
+    "imageUrl": "https://image.katexoxo.com/uploads/images/kxo_20220921152044w3yih.jpg",
+    "price": 130000,
+    "color": "Black",
+    "description":"Black Chanel Necklace From Paris Edinburgh Meters D'Art Collection"
   }
 ]
